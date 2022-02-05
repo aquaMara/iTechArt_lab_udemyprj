@@ -18,8 +18,9 @@ public class ReadingUserInputChallenge {
             } else {
                 System.out.println("Invalid Value");
                 // можно тут
+                scanner.nextLine(); // убрать лишнюю строку // почему тут
             }
-            scanner.nextLine(); // убрать лишнюю строку // почему тут
+
         }
         System.out.println("Sum : " + sum);
         scanner.close();
