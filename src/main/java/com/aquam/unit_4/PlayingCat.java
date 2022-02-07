@@ -19,6 +19,7 @@ public class PlayingCat {
             return true;
          */
 
+        /*
         if (summer) {
             if ((temperature >= 25 && temperature <= 45))
                 return true;
@@ -26,7 +27,14 @@ public class PlayingCat {
             if ((temperature >= 25 && temperature <= 35))
                 return true;
         }
-
         return false;
+         */
+
+
+        if (summer)
+            return temperature >= 25 && !(temperature > 45);
+        else
+            return temperature >= 25 && !(temperature > 35);
+
     }
 }
