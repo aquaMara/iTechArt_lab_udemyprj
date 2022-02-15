@@ -1,0 +1,22 @@
+1. Define methods in interface
+2.
+Imperative progr - what to do and how
+Declarative progr - what to do
+3. Lambda expression
+4. Java stream API
+
+Consumer - forEach
+Predicate - filter
+Optional - if we don't have the value
+
+        List<Integer> values = new ArrayList<>();
+        for (int i = 0; i < values.size(); i++)
+            values.add(i);
+        // if we have a lot of values and need to print them fast - parallelStream will create threads for me
+        // how many threads? - depends on the amount of available cores
+        values.parallelStream().forEach(i -> System.out.println(i));
+
+        // once we use stream values, we can not reuse them
+        // ! stream : once used can't be reused
+
+        // stream - to process great amount of data + parallel stream
